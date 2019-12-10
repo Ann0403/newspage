@@ -1,0 +1,22 @@
+@font-face {
+	font-family: "icons";
+	src: url('src/assets/fonts/icon.eot');
+	src: url('src/assets/fonts/icon.eot?#iefix') format('eot'),
+		url('src/assets/fonts/icon.woff2') format('woff2'),
+		url('src/assets/fonts/icon.woff') format('woff'),
+		url('src/assets/fonts/icon.ttf') format('truetype'),
+		url('src/assets/fonts/icon.svg#icons') format('svg');
+}
+
+.icon:before {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+
+
