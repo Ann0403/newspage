@@ -32,21 +32,21 @@ gulp.task('default', ['style']);
 var fontName = 'icons';
 
 // add svg icons to the folder "icons" and use 'iconfont' task for generating icon font
-// gulp.task( 'iconfont', async () => {
-//     gulp.src( 'src/assets/icons/*.svg' )
-//         .pipe( iconfontCss( {
-//             // где будет наш scss файл
-//             targetPath   : '../../styles/_icons.scss',
-//             // пути подлючения шрифтов в _icons.scss
-//             fontPath     : 'src/assets/fonts/',
-//             fontName    : fontName
+ gulp.task( 'iconfont', async () => {
+     gulp.src( 'src/assets/icons/*.svg' )
+        .pipe( iconfontCss( {
+            // где будет наш scss файл
+            targetPath   : '../../styles/_icons.scss',
+            // пути подлючения шрифтов в _icons.scss
+            fontPath     : 'src/assets/fonts/',
+             fontName    : fontName
 
-//         } ) )
-//         .pipe( iconfont( {
-//             fontName    : fontName,
-//             formats     : [ 'svg', 'ttf', 'eot', 'woff', 'woff2' ],
-//             normalize   : true,
-//             fontHeight  : 1001
-//         } ) )
-//         .pipe( gulp.dest( 'src/assets/fonts' ) )
-//   });
+         } ) )
+         .pipe( iconfont( {
+             fontName    : fontName,
+             formats     : [ 'svg', 'ttf', 'eot', 'woff', 'woff2' ],
+             normalize   : true,
+             fontHeight  : 1001
+         } ) )
+         .pipe( gulp.dest( 'src/assets/fonts' ) )
+   });
