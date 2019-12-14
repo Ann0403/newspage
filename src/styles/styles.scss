@@ -1,7 +1,7 @@
 @import "fonts";
 @import '_icons';
-
-
+@import '_reset';
+@import '_variables';
 *{
     margin: 0;
     padding: 0;
@@ -23,7 +23,8 @@
     }
     .form__title{
         text-align: center;
-        color: #1e90ff;
+        color: $maincolor;
+        font-size: 35px;
     }
     .input-reg{
     	text-align: center;
@@ -46,13 +47,13 @@
         height: 34px;
         margin-left: 37%;
         margin-top: 30px;
-        background: #fff;
-        border: 2px solid #1e90ff;
+        background: $bgcolor;
+        border: 2px solid $maincolor;
         border-radius: 2px;
         text-transform: uppercase;
         font-weight: bold;
-        cursor: pointer;
-        color:  #1e90ff;
+        cursor: $pointer;
+        color: $maincolor;
         &:hover{
             border: 2px solid #000; 
             color: #000;
@@ -65,53 +66,56 @@
     }
 }
 
-/*Page User*/
+/*Page User Admin*/
 .wrapper{
     padding: 46px;
+    .title__page{
+        font-size: 54px;
+        font-weight: bold;
+    }
 .logOut{
     float: right;
     margin-top: -59px;
     width: 90px;
     height: 31px;
-    background: #fff;
-    cursor: pointer;
+    background: $bgcolor;
+    cursor: $pointer;
+    border: 2px solid #1e90ff;
 }
-
 .button__add{
     width: 100px;
     height: 47px;
-    background: #1e90ff;
-    cursor: pointer;
+    background: $maincolor;
+    cursor: $pointer;
     border-radius: 2px;
     border: 2px solid #000;
-    color: #fff;
-    cursor: pointer;
-    &:hover{
-        background: #fff;
-        color: #1e90ff;
+    color: $bgcolor;
+        &:hover{
+        background: $bgcolor;
+        color: $maincolor;
     }
 }
 .modal{
-    color: #1e90ff;;
+    color: $maincolor;
     width: 600px;
     position: absolute;
     left: 166px;
     top: 157px;
     padding: 58px;
-    border: 2px solid #1e90ff;
+    border: 2px solid $maincolor;
     height: 302px;
-    background: #fff;
+    background: $bgcolor;
     display: none;
     .input__title{
-        margin-left: 25px;
+        margin-left: 21px;
     }
     .modal__title{
         width: 402px;
         height: 20px;
         padding-left: 10px;
-        border: 1px solid #1e90ff;
+        border: 1px solid $maincolor;
         &:hover{
-            border: 1px solid #000; 
+            border: $border; 
         }
     }
     .modal__content{
@@ -119,26 +123,30 @@
         height: 123px;
         padding-left: 16px;
         padding-right: 16px;
-        border: 1px solid #1e90ff;
+        border: 1px solid $maincolor;
         margin-top: 10px;
         &:hover{
-            border: 1px solid #000; 
+            border: $border; 
         }
+    }
+    #inputsnews{
+        display: none;
     }
     .modal__add{
         position: relative;
-        left: 362px;
+        left: 358px;
+        margin-top: 10px;
         height: 36px;
         width: 100px;
-        background: #fff;
-        border: 1px solid #1e90ff;
+        background: $bgcolor;
+        border: 1px solid $maincolor;
         text-transform: uppercase;
         font-weight: bold;
-        color: #1e90ff;
+        color: $maincolor;
         outline: none;
-        cursor: pointer;
+        cursor: $pointer;
         &:hover{
-            border: 2px solid #000; 
+            border: $border; 
             color: #000;
         }
     }
@@ -148,25 +156,25 @@
         height: 49px;
         padding-left: 15px;
         margin-top: 30px;
-        background: #fff;
-        border: 2px solid #1e90ff;
+        background: $bgcolor;
+        border: 2px solid $maincolor;
     }
     .editButton{
         width: 79px;
         height: 31px;
-        background: #fff;
+        background: $bgcolor;
         text-transform: uppercase;
         color: #00ff00;
         border: none;
-        cursor: pointer;
+        cursor: $pointer;
     }
     .removeButton{
         width: 79px;
         height: 31px;
-        background: #fff;
+        background: $bgcolor;
         text-transform: uppercase;
         color: #ff0000;
         border: none;
-        cursor: pointer;
+        cursor: $pointer;
     }
 }

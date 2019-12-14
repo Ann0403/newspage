@@ -4,6 +4,7 @@ function valid(e){
 	
 	var email  = document.getElementById("email").value;
 	var password = document.getElementById("pass").value;
+
 	e.preventDefault();
 	 if (email == "") 
 	 {

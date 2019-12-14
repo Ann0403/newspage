@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div class="wrapper">
-	<h1>hello user</h1>
+	<h1 class="title__page">hello user</h1>
 	<button class="logOut" id="logOut" onclick="logout()">Log out</button>
 		<button class="button__add" onclick="openmmodal()">+</button>
 			<div class="modal" id="modal">
@@ -16,10 +16,8 @@
 					<label for="title">Title</label>
 					<input type="text" class="modal__title">
 				</p>
-				<p class="input__content">
 					<label for="content">Content</label>
 					<textarea type="text" class="modal__content" id="modal__content"></textarea>
-				</p>
 				<button class="modal__add" id="modal__add" onclick="close()">add</button>
 			</div>
 			<div class="conteiner"><!--

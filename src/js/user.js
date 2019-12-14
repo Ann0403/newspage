@@ -28,7 +28,6 @@ class item{
 		let itemBox = document.createElement('div');
 		itemBox.classList.add('item');
 
-
 		conteiner.appendChild(itemBox);
 
 		itemBox.appendChild(inputs);
@@ -41,7 +40,7 @@ class item{
 function check(){
 	if(inputs.value != ""){
 		new item(inputs.value);
-	}
+}
 	document.getElementById("modal__content").value = "";
 	document.getElementById("modal").style.display = "none";
 }
